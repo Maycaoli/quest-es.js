@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validar()
+        {
+            if (document.cadastro.nome.value=="")
+            {Window.alert("voce deve preencher o campo Nome.")
+        document.cadastro.nome.focus();
+        return false;
+        }
+        if (document.cadastro.observacoes.value== "")
+        {Window.alert("Voce deve colocar alguma observacão...");
+          document.cadastro.observacoes.focus();
+          return false;
+        }
+         }
+    </script>
+</body>
+<input type="submit" value="enviar os dados" onclick="validar () ;">
+</html>
